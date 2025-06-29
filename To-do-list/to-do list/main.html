@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Attendance To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Attendance To-Do List</h1>
+    
+    <div class="input-area">
+      <input type="text" id="studentName" placeholder="Enter student name" />
+      <select id="status">
+        <option value="present">Present</option>
+        <option value="tardy">Tardy</option>
+      </select>
+      <button onclick="addStudent()">Add</button>
+    </div>
+
+    <div class="lists">
+      <div>
+        <h2>✅ Present</h2>
+        <ul id="presentList"></ul>
+      </div>
+      <div>
+        <h2>⏰ Tardy</h2>
+        <ul id="tardyList"></ul>
+      </div>
+    </div>
+
+    <button class="clear-btn" onclick="clearAll()">Clear All</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
